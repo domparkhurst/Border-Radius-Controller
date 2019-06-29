@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <script src="script.js"></script>
+  <div class="flex">
+    <div class="shape-container">
+      <div class="shape" id="my-shape"></div>
+    </div>
+    <div class="options">
+      <div class="head">
+        <h3>Radius controller</h3>
+      </div>
+      <div class="scroll">
+        <label for="range">Adjust radius</label>
+        <input type="range" class="range-input" value="0" min="0" max="50" step="5" id="adjust-shape" onchange="radius()">
+        <label for="range">Adjust border-top-left-radius</label>
+        <input type="range" class="range-input" value="0" min="0" max="50" step="5" id="adjust-shape-2" onchange="btlradius()">
+        <label for="range">Adjust border-top-right-radius</label>
+        <input type="range" class="range-input" value="0" min="0" max="50" step="5" id="adjust-shape-3" onchange="btrradius()">
+        <label for="range">Adjust border-bottom-left-radius</label>
+        <input type="range" class="range-input" value="0" min="0" max="50" step="5" id="adjust-shape-4" onchange="bblradius()">
+        <label for="range">Adjust border-bottom-left-radius</label>
+        <input type="range" class="range-input" value="0" min="0" max="50" step="5" id="adjust-shape-5" onchange="bbrradius()">
+      </div>
+      <div class="reset">
+        <p class="output">Radius value:&nbsp;<span id="output"></span></p>
+        <input type="button" value="Reset" onclick="reset()">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
